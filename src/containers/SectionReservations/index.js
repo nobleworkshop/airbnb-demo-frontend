@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Title from "../../components/Title";
-import Card from "./CardExperiences.js";
+import Card from "./CardReservations";
 
 const cardPics = [
-  require("./img/card1.png"),
-  require("./img/card2.png"),
-  require("./img/card3.png"),
-  require("./img/card4.png")
+  require("./img/card-1.png"),
+  require("./img/card-2.png"),
+  require("./img/card-3.png"),
+  require("./img/card-4.png")
 ];
 
-const Experiences = styled.section`padding-top: 45px;`;
+const Reservations = styled.section`padding-top: 45px;`;
 
 export default props => (
-  <Experiences>
+  <Reservations>
     <div className="row between-xs baseline-xs">
       <div className="col-xs-9 col-md-10">
-        <Title content="Experiences" />
+        <Title content="Popular reservations around the world" />
       </div>
       <div className="col-xs-3 col-md-2" />
     </div>
@@ -25,38 +25,38 @@ export default props => (
         <Card
           img={cardPics[0]}
           link="#"
-          title="Forest therapy"
-          price={29}
-          reviewsQuantity={44}
+          title="Chumley’s"
+          subtitle="Speakeasy"
+          price={60}
         />
       </div>
       <div className="col-xs-6 col-md-4 col-lg-3">
         <Card
           img={cardPics[1]}
           link="#"
-          title="Whale watching"
-          price={69}
-          reviewsQuantity={46}
+          title="Hanjan"
+          subtitle="Korean gastropub"
+          price={50}
         />
       </div>
       <div className="col-xs-6 col-md-4 col-lg-3">
         <Card
           img={cardPics[2]}
           link="#"
-          title="Table Mountain Summit, Cable Car Down"
-          price={69}
-          reviewsQuantity={44}
+          title="Prime Meats"
+          subtitle="German american"
+          price={55}
         />
       </div>
       <div className="col-xs-6 col-md-4 col-lg-3">
         <Card
           img={cardPics[3]}
           link="#"
-          title="Salsa Night"
-          price={50}
-          reviewsQuantity={44}
+          title="Seaprice"
+          subtitle="Fine seafood"
+          price={70}
         />
       </div>
     </div>
-  </Experiences>
+  </Reservations>
 );

@@ -19,17 +19,15 @@ export default props => (
       </div>
     </div>
     <div className="row">
-        <div className="col-xs-6 col-md-5 col-lg-4">
-          <Card
-            img={cardPics[0]} link="#" title="Homes"
-          />
-        </div>
-        <div className="col-xs-6 col-md-5 col-lg-4">
-          <Card img={cardPics[1]} link="#" title="Experiences" />
-        </div>
-        <div className="col-xs-6 col-md-5 col-lg-4">
-          <Card img={cardPics[2]} link="#"  title="Restaurants" />
-        </div>
+      <div className="col-xs-6 col-md-5 col-lg-4">
+        <Card img={cardPics[0]} link="#" title="Homes" />
+      </div>
+      <div className="col-xs-6 col-md-5 col-lg-4">
+        <Card img={cardPics[1]} link="#" title="Experiences" />
+      </div>
+      <div className="col-xs-6 col-md-5 col-lg-4">
+        <Card img={cardPics[2]} link="#" title="Restaurants" />
+      </div>
     </div>
   </Explore>
 );

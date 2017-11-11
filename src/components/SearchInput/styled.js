@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import iconSearch from './icon-search.svg';
+import React, { Component } from "react";
+import styled from "styled-components";
+import iconSearch from "./icon-search.svg";
 
 export const Wrapper = styled.div`
   position: relative;
@@ -21,26 +21,28 @@ export const Wrapper = styled.div`
 `;
 
 export const Input = styled.input`
-	background: #ffffff;
-	width: 100%;
-	border: 1px solid rgba(72, 72, 72, 0.2);
-	box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
-	border-radius: 4px;
-	padding: 12px 24px 12px 53px;
+  background: #ffffff;
+  width: 100%;
+  border: 1px solid rgba(72, 72, 72, 0.2);
+  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
+  border-radius: 4px;
+  padding: 12px 24px 12px 53px;
 
-	font-family: "Circular Air Book", "Arial", sans-serif;
-	line-height: 24px;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: normal;
+  font-family: "Circular Air Book", "Arial", sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
 
-    ::placeholder {
-      color: #383838;
-      opacity: 0.64;
-    }
+  ::placeholder {
+    color: #383838;
+    opacity: 0.64;
+  }
 
-    :hover, :active, :focus {
-		border: 1px solid #FF5A5F;
-		outline: none;
-    }
+  :hover,
+  :active,
+  :focus {
+    border: 1px solid #ff5a5f;
+    outline: none;
+  }
 `;

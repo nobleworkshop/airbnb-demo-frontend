@@ -1,32 +1,32 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
-import 'flexboxgrid2/flexboxgrid2.css'
-import logoImg from './icons/logo.svg';
+import "flexboxgrid2/flexboxgrid2.css";
+import logoImg from "./icons/logo.svg";
 import arrowDown from "./icons/arrowDown.svg";
 
 const FooterWrapper = styled.footer`
-	display: block;
-	position: relative;
-	border-top: 1px solid rgba(72, 72, 72, 0.3);
+  display: block;
+  position: relative;
+  border-top: 1px solid rgba(72, 72, 72, 0.3);
 
-	.navSection {
-		padding-top: 48px;
-		padding-bottom: 48px;
-	}
+  .navSection {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 
-	.copyrightSection {
-		padding-top: 35px;
-		padding-bottom: 35px;
-	}
+  .copyrightSection {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 
-	.flex-row {
-		display: flex;
-	}
+  .flex-row {
+    display: flex;
+  }
 
-	.flex-end {
-		justify-content: flex-end;
-	}
+  .flex-end {
+    justify-content: flex-end;
+  }
 `;
 
 const Header = styled.h3`
@@ -39,54 +39,54 @@ const Header = styled.h3`
 `;
 
 const NavVerticalHolder = styled.ul`
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 `;
 
 const NavHorizontalHolder = styled.ul`
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
 `;
 
 const NavItem = styled.li`
-	margin: 0;
-	padding: 0;
-	margin-bottom: 8px;
-	font-size: 15px;
-	line-height: 18px;
-  	font-style: book;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 18px;
+  font-style: book;
 `;
 
 const NavLink = styled.a`
-	color: #636363;
-	text-decoration: none;
+  color: #636363;
+  text-decoration: none;
 
-	&.horizontalMargin {
-		margin-left: 8px;
-		margin-right: 8px;
+  &.horizontalMargin {
+    margin-left: 8px;
+    margin-right: 8px;
 
-		&:last-child {
-			margin-right: 0px;
-		}
-	}
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
 
-	:hover {
-		color: #FF5A5F;
-		text-decoration: underline;
-	}
+  :hover {
+    color: #ff5a5f;
+    text-decoration: underline;
+  }
 `;
 
 const HorizontalLine = styled.hr`
-	margin: 0;
-	padding: 0;
-	border: 0;
-	border-top: 1px solid rgba(72, 72, 72, 0.3);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid rgba(72, 72, 72, 0.3);
 `;
 
 export const LogoLink = styled.a`
@@ -167,125 +167,132 @@ export const Select = styled.select`
 
 class Footer extends React.Component {
   render() {
-
-  	const SocialsPics = [
-  	  require("./icons/facebook.svg"),
-  	  require("./icons/twitter.svg"),
-  	  require("./icons/instagram.svg")
-  	];
+    const SocialsPics = [
+      require("./icons/facebook.svg"),
+      require("./icons/twitter.svg"),
+      require("./icons/instagram.svg")
+    ];
 
     return (
-    	<FooterWrapper>
-	    	<div className="container">
-		    	<section className="navSection">
-			    	<div className="row">
-				    	<div class="col-xs-3">
-					    	<Dropdown>
-					    	  <DropdownPlaceholder>English</DropdownPlaceholder>
-					    	  <Select name="lang" id="lang">
-					    	    <option value="eng">English</option>
-					    	    <option value="rus">Russian</option>
-					    	  </Select>
-					    	</Dropdown>
+      <FooterWrapper>
+        <div className="container">
+          <section className="navSection">
+            <div className="row">
+              <div class="col-xs-3">
+                <Dropdown>
+                  <DropdownPlaceholder>English</DropdownPlaceholder>
+                  <Select name="lang" id="lang">
+                    <option value="eng">English</option>
+                    <option value="rus">Russian</option>
+                  </Select>
+                </Dropdown>
 
-					    	<Dropdown>
-					    	  <DropdownPlaceholder>United States dollar</DropdownPlaceholder>
-					    	  <Select name="lang" id="lang">
-					    	    <option value="eng">United States dollar</option>
-					    	    <option value="rus">Ruble</option>
-					    	  </Select>
-					    	</Dropdown>
-				    	</div>
-				    	<div class="col-xs-3 col-xs-offset-1">
-		    		    	<Header>Airbnb</Header>
-		    		    	<NavVerticalHolder>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Why Host</NavLink>
-			    		    	</NavItem>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Hospitality</NavLink>
-			    		    	</NavItem>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Responsible Hosting</NavLink>
-			    		    	</NavItem>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Community Center</NavLink>
-			    		    	</NavItem>
-		    		    	</NavVerticalHolder>
-				    	</div>
-		    	    	<div class="col-xs-3">
-		    		    	<Header>Discover</Header>
-		    		    	<NavVerticalHolder>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Why Host</NavLink>
-			    		    	</NavItem>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Hospitality</NavLink>
-			    		    	</NavItem>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Responsible Hosting</NavLink>
-			    		    	</NavItem>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Community Center</NavLink>
-			    		    	</NavItem>
-		    		    	</NavVerticalHolder>
-		    	    	</div>
-		    	    	<div class="col-xs-2">
-		    		    	<Header>Hosting</Header>
-		    		    	<NavVerticalHolder>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Why Host</NavLink>
-			    		    	</NavItem>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Hospitality</NavLink>
-			    		    	</NavItem>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Responsible Hosting</NavLink>
-			    		    	</NavItem>
-			    		    	<NavItem>
-			    		    		<NavLink href="#">Community Center</NavLink>
-			    		    	</NavItem>
-		    		    	</NavVerticalHolder>
-		    	    	</div>
-			    	</div>
-		    	</section>
-		    	<HorizontalLine />
-		    	<section className="copyrightSection">
-			    	<div className="row">
-		    	    	<div class="col-xs-6">
-		    		    	<LogoLink href="#">
-		    		    	  <LogoWrapper>
-		    		    	    <img src={logoImg} alt="Airbnb" />
-		    		    	  </LogoWrapper>
-		    		    	  <Copyright>© Airbnb Inc.</Copyright>
-		    		    	</LogoLink>
-		    	    	</div>
-		    	    	<div class="col-xs-6">
-		    	    		<div className="flex-row flex-end">
-			      		    	<NavHorizontalHolder>
-			  	    		    	<NavItem>
-			  	    		    		<NavLink className="horizontalMargin" href="#">Terms</NavLink>
-			  	    		    	</NavItem>
-			  	    		    	<NavItem>
-			  	    		    		<NavLink className="horizontalMargin" href="#">Privacy</NavLink>
-			  	    		    	</NavItem>
-			  	    		    	<NavItem>
-			  	    		    		<NavLink className="horizontalMargin" href="#">Site map</NavLink>
-			  	    		    	</NavItem>
-			      		    	</NavHorizontalHolder>
-			    		    	<FooterSocials>
-			    		    	  <SocialLink pic={SocialsPics[0]} href="#" />
-			    		    	  <SocialLink pic={SocialsPics[1]} href="#" />
-			    		    	  <SocialLink pic={SocialsPics[2]} href="#" />
-			    		    	</FooterSocials>
-		    	    		</div>
-		    	    	</div>
-			    	</div>
-		    	</section>
-	    	</div>
-    	</FooterWrapper>
+                <Dropdown>
+                  <DropdownPlaceholder>
+                    United States dollar
+                  </DropdownPlaceholder>
+                  <Select name="lang" id="lang">
+                    <option value="eng">United States dollar</option>
+                    <option value="rus">Ruble</option>
+                  </Select>
+                </Dropdown>
+              </div>
+              <div class="col-xs-3 col-xs-offset-1">
+                <Header>Airbnb</Header>
+                <NavVerticalHolder>
+                  <NavItem>
+                    <NavLink href="#">Why Host</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Hospitality</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Responsible Hosting</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Community Center</NavLink>
+                  </NavItem>
+                </NavVerticalHolder>
+              </div>
+              <div class="col-xs-3">
+                <Header>Discover</Header>
+                <NavVerticalHolder>
+                  <NavItem>
+                    <NavLink href="#">Why Host</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Hospitality</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Responsible Hosting</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Community Center</NavLink>
+                  </NavItem>
+                </NavVerticalHolder>
+              </div>
+              <div class="col-xs-2">
+                <Header>Hosting</Header>
+                <NavVerticalHolder>
+                  <NavItem>
+                    <NavLink href="#">Why Host</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Hospitality</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Responsible Hosting</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Community Center</NavLink>
+                  </NavItem>
+                </NavVerticalHolder>
+              </div>
+            </div>
+          </section>
+          <HorizontalLine />
+          <section className="copyrightSection">
+            <div className="row">
+              <div class="col-xs-6">
+                <LogoLink href="#">
+                  <LogoWrapper>
+                    <img src={logoImg} alt="Airbnb" />
+                  </LogoWrapper>
+                  <Copyright>© Airbnb Inc.</Copyright>
+                </LogoLink>
+              </div>
+              <div class="col-xs-6">
+                <div className="flex-row flex-end">
+                  <NavHorizontalHolder>
+                    <NavItem>
+                      <NavLink className="horizontalMargin" href="#">
+                        Terms
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="horizontalMargin" href="#">
+                        Privacy
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="horizontalMargin" href="#">
+                        Site map
+                      </NavLink>
+                    </NavItem>
+                  </NavHorizontalHolder>
+                  <FooterSocials>
+                    <SocialLink pic={SocialsPics[0]} href="#" />
+                    <SocialLink pic={SocialsPics[1]} href="#" />
+                    <SocialLink pic={SocialsPics[2]} href="#" />
+                  </FooterSocials>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </FooterWrapper>
     );
   }
-};
+}
 
 export default Footer;

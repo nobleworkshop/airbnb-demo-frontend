@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import logo from './logo.svg';
+import React, { Component } from "react";
+import styled from "styled-components";
+import logo from "./logo.svg";
 
 export const LogoLink = styled.a`
-	display: block;
-	position: relative;
-	width: 30px;
-	height: 32px;
-	margin-top: 24px;
-	margin-bottom: 24px;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 `;
 
 class Logo extends React.Component {
@@ -19,6 +19,6 @@ class Logo extends React.Component {
       </LogoLink>
     );
   }
-};
+}
 
 export default Logo;

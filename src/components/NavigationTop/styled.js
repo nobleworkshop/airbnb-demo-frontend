@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
 export const Wrapper = styled.ul`
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	align-content: center;
-	justify-content: flex-end;
-	margin-top: 27px;
-	margin-bottom: 24px;
-
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
+  margin-top: 27px;
+  margin-bottom: 24px;
 `;
 
 export const Item = styled.li`
@@ -26,7 +25,7 @@ export const Item = styled.li`
   list-style-type: none;
 
   :hover {
-	color: #FF5A5F;
+    color: #ff5a5f;
     text-decoration: underline;
   }
 `;

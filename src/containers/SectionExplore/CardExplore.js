@@ -12,15 +12,13 @@ const Card = styled.a`
   text-decoration: none;
 
   img {
-  	display: block;
- 	border-top-left-radius: 4px;
- 	border-bottom-left-radius: 4px;
+    display: block;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
   }
 `;
 
-const ImageContainer = styled.div`
-	overflow: hidden;
-`;
+const ImageContainer = styled.div`overflow: hidden;`;
 
 const ContentContainer = styled.div`
   display: flex;
@@ -41,7 +39,7 @@ const Title = styled.h3`
 export default props => (
   <Card href={props.link}>
     <ImageContainer>
-    	<img src={props.img} alt="#" />
+      <img src={props.img} alt="#" />
     </ImageContainer>
     <ContentContainer>
       <Title>{props.title}</Title>

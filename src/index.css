@@ -1,5 +1,51 @@
+@font-face {
+  font-family: "Circular Air Book";
+  src: url("./fonts/subset-CircularAir-Book.woff2") format("woff2"),
+    url("./fonts/subset-CircularAir-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Air";
+  src: url("./fonts/subset-CircularAir-Light.woff2") format("woff2"),
+    url("./fonts/subset-CircularAir-Light.woff") format("woff");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Air";
+  src: url("./fonts/subset-CircularAir-Bold.woff2") format("woff2"),
+    url("./fonts/subset-CircularAir-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("./fonts/subset-CircularStd-Book.woff2") format("woff2"),
+    url("./fonts/subset-CircularStd-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  min-width: 320px;
+  font-family: "Circular Air", "Arial", sans-serif;
+  font-size: 18px;
+  color: #171717;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
